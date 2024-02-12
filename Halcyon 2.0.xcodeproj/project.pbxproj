@@ -7,44 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D0F29C012B7ABD1C00B0F805 /* Halcyon 2.0 Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D0F29C002B7ABD1C00B0F805 /* Halcyon 2.0 Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D0F29C062B7ABD1C00B0F805 /* Halcyon_2_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C052B7ABD1C00B0F805 /* Halcyon_2_0App.swift */; };
 		D0F29C082B7ABD1C00B0F805 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C072B7ABD1C00B0F805 /* ContentView.swift */; };
 		D0F29C0A2B7ABD1E00B0F805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F29C092B7ABD1E00B0F805 /* Assets.xcassets */; };
 		D0F29C0D2B7ABD1E00B0F805 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F29C0C2B7ABD1E00B0F805 /* Preview Assets.xcassets */; };
+		D0F29C252B7AC14400B0F805 /* ThermostatScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C192B7ABFFE00B0F805 /* ThermostatScaleView.swift */; };
+		D0F29C262B7AC14C00B0F805 /* ThermostatSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C1B2B7ABFFE00B0F805 /* ThermostatSummaryView.swift */; };
+		D0F29C272B7AC15500B0F805 /* ThermostatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C1C2B7ABFFE00B0F805 /* ThermostatView.swift */; };
+		D0F29C282B7AC15D00B0F805 /* ThermometerDialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C1E2B7ABFFE00B0F805 /* ThermometerDialView.swift */; };
+		D0F29C292B7AC16500B0F805 /* ThermostatPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C202B7ABFFE00B0F805 /* ThermostatPlaceholderView.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D0F29C022B7ABD1C00B0F805 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0F29BF42B7ABD1C00B0F805 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D0F29BFF2B7ABD1C00B0F805;
-			remoteInfo = "Halcyon 2.0 Watch App";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		D0F29C132B7ABD1E00B0F805 /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-				D0F29C012B7ABD1C00B0F805 /* Halcyon 2.0 Watch App.app in Embed Watch Content */,
-			);
-			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		D0F29BFA2B7ABD1C00B0F805 /* Halcyon 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Halcyon 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0F29C002B7ABD1C00B0F805 /* Halcyon 2.0 Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Halcyon 2.0 Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F29C002B7ABD1C00B0F805 /* _Halcyon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = _Halcyon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F29C052B7ABD1C00B0F805 /* Halcyon_2_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Halcyon_2_0App.swift; sourceTree = "<group>"; };
 		D0F29C072B7ABD1C00B0F805 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D0F29C092B7ABD1E00B0F805 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0F29C0C2B7ABD1E00B0F805 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0F29C192B7ABFFE00B0F805 /* ThermostatScaleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermostatScaleView.swift; sourceTree = "<group>"; };
+		D0F29C1B2B7ABFFE00B0F805 /* ThermostatSummaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermostatSummaryView.swift; sourceTree = "<group>"; };
+		D0F29C1C2B7ABFFE00B0F805 /* ThermostatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermostatView.swift; sourceTree = "<group>"; };
+		D0F29C1E2B7ABFFE00B0F805 /* ThermometerDialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermometerDialView.swift; sourceTree = "<group>"; };
+		D0F29C202B7ABFFE00B0F805 /* ThermostatPlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermostatPlaceholderView.swift; sourceTree = "<group>"; };
+		D0F29C212B7ABFFE00B0F805 /* thermostat.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = thermostat.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +46,7 @@
 		D0F29BF32B7ABD1C00B0F805 = {
 			isa = PBXGroup;
 			children = (
+				D0F29C172B7ABFFE00B0F805 /* Halcyon 2.0 */,
 				D0F29C042B7ABD1C00B0F805 /* Halcyon 2.0 Watch App */,
 				D0F29BFB2B7ABD1C00B0F805 /* Products */,
 			);
@@ -69,8 +55,7 @@
 		D0F29BFB2B7ABD1C00B0F805 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0F29BFA2B7ABD1C00B0F805 /* Halcyon 2.0.app */,
-				D0F29C002B7ABD1C00B0F805 /* Halcyon 2.0 Watch App.app */,
+				D0F29C002B7ABD1C00B0F805 /* _Halcyon.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,26 +79,54 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D0F29C172B7ABFFE00B0F805 /* Halcyon 2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				D0F29C182B7ABFFE00B0F805 /* Thermostat */,
+				D0F29C212B7ABFFE00B0F805 /* thermostat.svg */,
+			);
+			path = "Halcyon 2.0";
+			sourceTree = "<group>";
+		};
+		D0F29C182B7ABFFE00B0F805 /* Thermostat */ = {
+			isa = PBXGroup;
+			children = (
+				D0F29C192B7ABFFE00B0F805 /* ThermostatScaleView.swift */,
+				D0F29C1A2B7ABFFE00B0F805 /* Dial Summary */,
+				D0F29C1C2B7ABFFE00B0F805 /* ThermostatView.swift */,
+				D0F29C1D2B7ABFFE00B0F805 /* Dial */,
+				D0F29C1F2B7ABFFE00B0F805 /* Dial Background */,
+			);
+			path = Thermostat;
+			sourceTree = "<group>";
+		};
+		D0F29C1A2B7ABFFE00B0F805 /* Dial Summary */ = {
+			isa = PBXGroup;
+			children = (
+				D0F29C1B2B7ABFFE00B0F805 /* ThermostatSummaryView.swift */,
+			);
+			path = "Dial Summary";
+			sourceTree = "<group>";
+		};
+		D0F29C1D2B7ABFFE00B0F805 /* Dial */ = {
+			isa = PBXGroup;
+			children = (
+				D0F29C1E2B7ABFFE00B0F805 /* ThermometerDialView.swift */,
+			);
+			path = Dial;
+			sourceTree = "<group>";
+		};
+		D0F29C1F2B7ABFFE00B0F805 /* Dial Background */ = {
+			isa = PBXGroup;
+			children = (
+				D0F29C202B7ABFFE00B0F805 /* ThermostatPlaceholderView.swift */,
+			);
+			path = "Dial Background";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D0F29BF92B7ABD1C00B0F805 /* Halcyon 2.0 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D0F29C142B7ABD1E00B0F805 /* Build configuration list for PBXNativeTarget "Halcyon 2.0" */;
-			buildPhases = (
-				D0F29BF82B7ABD1C00B0F805 /* Resources */,
-				D0F29C132B7ABD1E00B0F805 /* Embed Watch Content */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D0F29C032B7ABD1C00B0F805 /* PBXTargetDependency */,
-			);
-			name = "Halcyon 2.0";
-			productName = "Halcyon 2.0";
-			productReference = D0F29BFA2B7ABD1C00B0F805 /* Halcyon 2.0.app */;
-			productType = "com.apple.product-type.application.watchapp2-container";
-		};
 		D0F29BFF2B7ABD1C00B0F805 /* Halcyon 2.0 Watch App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0F29C102B7ABD1E00B0F805 /* Build configuration list for PBXNativeTarget "Halcyon 2.0 Watch App" */;
@@ -128,7 +141,7 @@
 			);
 			name = "Halcyon 2.0 Watch App";
 			productName = "Halcyon 2.0 Watch App";
-			productReference = D0F29C002B7ABD1C00B0F805 /* Halcyon 2.0 Watch App.app */;
+			productReference = D0F29C002B7ABD1C00B0F805 /* _Halcyon.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,9 +154,6 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					D0F29BF92B7ABD1C00B0F805 = {
-						CreatedOnToolsVersion = 15.2;
-					};
 					D0F29BFF2B7ABD1C00B0F805 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -162,20 +172,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D0F29BF92B7ABD1C00B0F805 /* Halcyon 2.0 */,
 				D0F29BFF2B7ABD1C00B0F805 /* Halcyon 2.0 Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D0F29BF82B7ABD1C00B0F805 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D0F29BFE2B7ABD1C00B0F805 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,20 +194,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F29C272B7AC15500B0F805 /* ThermostatView.swift in Sources */,
+				D0F29C262B7AC14C00B0F805 /* ThermostatSummaryView.swift in Sources */,
+				D0F29C292B7AC16500B0F805 /* ThermostatPlaceholderView.swift in Sources */,
 				D0F29C082B7ABD1C00B0F805 /* ContentView.swift in Sources */,
+				D0F29C252B7AC14400B0F805 /* ThermostatScaleView.swift in Sources */,
+				D0F29C282B7AC15D00B0F805 /* ThermometerDialView.swift in Sources */,
 				D0F29C062B7ABD1C00B0F805 /* Halcyon_2_0App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D0F29C032B7ABD1C00B0F805 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D0F29BFF2B7ABD1C00B0F805 /* Halcyon 2.0 Watch App */;
-			targetProxy = D0F29C022B7ABD1C00B0F805 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D0F29C0E2B7ABD1E00B0F805 /* Debug */ = {
@@ -333,7 +332,6 @@
 				DEVELOPMENT_TEAM = G3337N7QRS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Halcyon 2.0";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -342,7 +340,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.powskierman.Halcyon-2-0.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = _Halcyon;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -363,7 +361,6 @@
 				DEVELOPMENT_TEAM = G3337N7QRS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Halcyon 2.0";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -372,7 +369,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.powskierman.Halcyon-2-0.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = _Halcyon;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -380,39 +377,6 @@
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 10.2;
-			};
-			name = Release;
-		};
-		D0F29C152B7ABD1E00B0F805 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G3337N7QRS;
-				INFOPLIST_KEY_CFBundleDisplayName = "Halcyon 2.0";
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.powskierman.Halcyon-2.0";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		D0F29C162B7ABD1E00B0F805 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G3337N7QRS;
-				INFOPLIST_KEY_CFBundleDisplayName = "Halcyon 2.0";
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.powskierman.Halcyon-2.0";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -433,15 +397,6 @@
 			buildConfigurations = (
 				D0F29C112B7ABD1E00B0F805 /* Debug */,
 				D0F29C122B7ABD1E00B0F805 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0F29C142B7ABD1E00B0F805 /* Build configuration list for PBXNativeTarget "Halcyon 2.0" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0F29C152B7ABD1E00B0F805 /* Debug */,
-				D0F29C162B7ABD1E00B0F805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
