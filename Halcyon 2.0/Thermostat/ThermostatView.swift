@@ -9,6 +9,7 @@ enum Room: String, CaseIterable {
 }
 
 struct ThermometerView: View {
+    @Binding var temperature: Double
     var room: Room
     private let baseRingSize: CGFloat = 180
     private let baseOuterDialSize: CGFloat = 170
@@ -56,19 +57,19 @@ struct ThermometerView: View {
             .onAppear {
                 currentTemperature = temperaturesForRooms[room, default: 22]
             }
-            .onChange(of: room) { [self] _ in
+            .onChange(of: room) {
                 temperaturesForRooms[room] = currentTemperature
                 currentTemperature = temperaturesForRooms[room, default: 22]
             }
-            .onChange(of: currentTemperature) { newTemperature in
-                temperaturesForRooms[room] = newTemperature
+            .onChange(of: currentTemperature) { 
+                temperaturesForRooms[room] = currentTemperature
             }
         }
     }
-}
-
-struct ThermometerView_Previews: PreviewProvider {
-    static var previews: some View {
-        ThermometerView(room: .Chambre)
+    
+    struct ThermometerView_Previews: PreviewProvider {
+        static var previews: some View {
+            ThermometerView(temperature: .constant(22), room: Room.Chambre)
+        }
     }
 }
