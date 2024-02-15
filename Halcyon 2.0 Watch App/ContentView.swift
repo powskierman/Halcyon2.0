@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    // State variable to keep track of the selected room
     @State private var selectedRoom: Room = .Chambre // Default to the first room
+    @State private var temperaturesForRooms: [Room: Double] = Room.allCases.reduce(into: [:]) { $0[$1] = 22 } // Initialize with default temperature
 
     var body: some View {
         NavigationView {
@@ -19,8 +19,9 @@ struct ContentView: View {
                     VStack(spacing: 0) {
                         TabView(selection: $selectedRoom) {
                             ForEach(Room.allCases, id: \.self) { room in
-                                ThermometerView(room: room)
-                                    .tag(room) // Ensure each view is uniquely tagged
+                                // Use a binding to the specific room's temperature
+                                ThermometerView(temperature: bindingFor(room: room), room: room)
+                                    .tag(room)
                             }
                         }
                         .tabViewStyle(PageTabViewStyle())
@@ -29,9 +30,16 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
-            // Use the selectedRoom for the navigation title
             .navigationTitle(selectedRoom.rawValue)
         }
+    }
+
+    // Helper function to get a binding to a room's temperature
+    private func bindingFor(room: Room) -> Binding<Double> {
+        Binding(
+            get: { temperaturesForRooms[room, default: 22] }, // Provide a default value
+            set: { temperaturesForRooms[room] = $0 }
+        )
     }
 }
 
