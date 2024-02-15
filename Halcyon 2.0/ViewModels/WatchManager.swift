@@ -72,4 +72,11 @@ class WatchManager: ObservableObject {
             }
         }
     }
+    
+    func executeWatchSpecificTask() {
+            // Example: Call a script
+            HassClientService.shared.callScript(entityId: "script.watch_task") { result in
+                // Handle the result, update UI accordingly
+            }
+        }
 }

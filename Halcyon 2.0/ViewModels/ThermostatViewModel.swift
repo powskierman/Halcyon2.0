@@ -32,7 +32,7 @@ class ThermostatViewModel: ObservableObject {
 
     func sendCommand(entityId: String, newState: String) {
         guard let restClient = restClient else {
-            print("[WatchViewModel] RestClient is nil.")
+            print("[ThermostatViewModel] RestClient is nil.")
             return
         }
 
@@ -40,15 +40,21 @@ class ThermostatViewModel: ObservableObject {
             DispatchQueue.main.async {
                 switch result {
                 case .success(let entity):
-                    print("[WatchViewModel] Command sent successfully to \(entityId): \(entity.state)")
+                    print("[ThermostatViewModel] Command sent successfully to \(entityId): \(entity.state)")
                     // Update UI based on the response
                     // ... (handle the update here)
                 case .failure(let error):
-                    print("[WatchViewModel] Error sending command to \(entityId): \(error)")
+                    print("[ThermostatViewModel] Error sending command to \(entityId): \(error)")
                     self.errorMessage = "Failed to send command to \(entityId)"
                 }
             }
         }
     }
+    
+    func sendThermostatCommand(newState: String) {
+            HassClientService.shared.sendCommand(entityId: "thermostat.device_id", newState: newState) { result in
+                // Handle the result, update UI accordingly
+            }
+        }
 }
 
