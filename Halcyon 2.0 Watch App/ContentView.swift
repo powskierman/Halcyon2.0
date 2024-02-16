@@ -20,7 +20,7 @@ struct ContentView: View {
                         TabView(selection: $selectedRoom) {
                             ForEach(Room.allCases, id: \.self) { room in
                                 // Use a binding to the specific room's temperature
-                                ThermometerView(temperature: bindingFor(room: room), room: room)
+                                ThermostatView(temperature: bindingFor(room: room), room: room)
                                     .tag(room)
                             }
                         }

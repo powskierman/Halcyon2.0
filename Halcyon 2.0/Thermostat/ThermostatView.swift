@@ -1,14 +1,6 @@
 import SwiftUI
 
-enum Room: String, CaseIterable {
-    case Chambre = "Chambre"
-    case TVRoom = "TV Room"
-    case Cuisine = "Cuisine"
-    case Salon = "Salon"
-    case Amis = "Amis"
-}
-
-struct ThermometerView: View {
+struct ThermostatView: View {
     @Binding var temperature: Double
     var room: Room
     private let baseRingSize: CGFloat = 180
@@ -69,7 +61,7 @@ struct ThermometerView: View {
     
     struct ThermometerView_Previews: PreviewProvider {
         static var previews: some View {
-            ThermometerView(temperature: .constant(22), room: Room.Chambre)
+            ThermostatView(temperature: .constant(22), room: Room.Chambre)
         }
     }
 }

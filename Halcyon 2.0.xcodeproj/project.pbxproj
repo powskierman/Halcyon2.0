@@ -13,6 +13,7 @@
 		D04C99B92B7C47D800266270 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C99B82B7C47D800266270 /* Enums.swift */; };
 		D04C99BF2B7C538200266270 /* WatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C99BE2B7C538100266270 /* WatchManager.swift */; };
 		D04C99C52B7EC91900266270 /* HassClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C99C42B7EC91900266270 /* HassClientService.swift */; };
+		D04C99C72B800E9600266270 /* HassClimateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C99C62B800E9600266270 /* HassClimateService.swift */; };
 		D0F29C062B7ABD1C00B0F805 /* Halcyon_2_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C052B7ABD1C00B0F805 /* Halcyon_2_0App.swift */; };
 		D0F29C082B7ABD1C00B0F805 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C072B7ABD1C00B0F805 /* ContentView.swift */; };
 		D0F29C0A2B7ABD1E00B0F805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F29C092B7ABD1E00B0F805 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		D04C99B82B7C47D800266270 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		D04C99BE2B7C538100266270 /* WatchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
 		D04C99C42B7EC91900266270 /* HassClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HassClientService.swift; sourceTree = "<group>"; };
+		D04C99C62B800E9600266270 /* HassClimateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HassClimateService.swift; sourceTree = "<group>"; };
 		D0F29C002B7ABD1C00B0F805 /* _Halcyon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = _Halcyon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F29C052B7ABD1C00B0F805 /* Halcyon_2_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Halcyon_2_0App.swift; sourceTree = "<group>"; };
 		D0F29C072B7ABD1C00B0F805 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				D04C99B82B7C47D800266270 /* Enums.swift */,
 				D04C99BE2B7C538100266270 /* WatchManager.swift */,
 				D04C99C42B7EC91900266270 /* HassClientService.swift */,
+				D04C99C62B800E9600266270 /* HassClimateService.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			files = (
 				D04C99C52B7EC91900266270 /* HassClientService.swift in Sources */,
 				D0F29C272B7AC15500B0F805 /* ThermostatView.swift in Sources */,
+				D04C99C72B800E9600266270 /* HassClimateService.swift in Sources */,
 				D0F29C262B7AC14C00B0F805 /* ThermostatSummaryView.swift in Sources */,
 				D0F29C292B7AC16500B0F805 /* ThermostatPlaceholderView.swift in Sources */,
 				D04C99B22B7C44E000266270 /* ThermostatViewModel.swift in Sources */,
