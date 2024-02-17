@@ -14,6 +14,7 @@
 		D04C99BF2B7C538200266270 /* WatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C99BE2B7C538100266270 /* WatchManager.swift */; };
 		D04C99C52B7EC91900266270 /* HassClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C99C42B7EC91900266270 /* HassClientService.swift */; };
 		D04C99C72B800E9600266270 /* HassClimateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C99C62B800E9600266270 /* HassClimateService.swift */; };
+		D04C99C92B80359F00266270 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = D04C99C82B80359F00266270 /* Secrets.plist */; };
 		D0F29C062B7ABD1C00B0F805 /* Halcyon_2_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C052B7ABD1C00B0F805 /* Halcyon_2_0App.swift */; };
 		D0F29C082B7ABD1C00B0F805 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C072B7ABD1C00B0F805 /* ContentView.swift */; };
 		D0F29C0A2B7ABD1E00B0F805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F29C092B7ABD1E00B0F805 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		D04C99BE2B7C538100266270 /* WatchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
 		D04C99C42B7EC91900266270 /* HassClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HassClientService.swift; sourceTree = "<group>"; };
 		D04C99C62B800E9600266270 /* HassClimateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HassClimateService.swift; sourceTree = "<group>"; };
+		D04C99C82B80359F00266270 /* Secrets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Secrets.plist; path = ../GarageWatchHass/Secrets.plist; sourceTree = "<group>"; };
 		D0F29C002B7ABD1C00B0F805 /* _Halcyon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = _Halcyon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F29C052B7ABD1C00B0F805 /* Halcyon_2_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Halcyon_2_0App.swift; sourceTree = "<group>"; };
 		D0F29C072B7ABD1C00B0F805 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		D0F29BF32B7ABD1C00B0F805 = {
 			isa = PBXGroup;
 			children = (
+				D04C99C82B80359F00266270 /* Secrets.plist */,
 				D0F29C172B7ABFFE00B0F805 /* Halcyon 2.0 */,
 				D0F29C042B7ABD1C00B0F805 /* Halcyon 2.0 Watch App */,
 				D0F29BFB2B7ABD1C00B0F805 /* Products */,
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0F29C0D2B7ABD1E00B0F805 /* Preview Assets.xcassets in Resources */,
+				D04C99C92B80359F00266270 /* Secrets.plist in Resources */,
 				D0F29C0A2B7ABD1E00B0F805 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

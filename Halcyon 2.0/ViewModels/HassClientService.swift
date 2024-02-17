@@ -8,7 +8,7 @@
 import Foundation
 import HassWatchFramework
 
-class HassClientService {
+class HassClientService: ObservableObject {
     static let shared = HassClientService()
     private var restClient: HassRestClient
 

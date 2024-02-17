@@ -17,6 +17,10 @@ enum Room: String, CaseIterable {
     case Cuisine = "Cuisine"
     case Salon = "Salon"
     case Amis = "Amis"
+    
+    var entityId: String {
+         "climate.\(self.rawValue)_thermostat"
+     }
 }
 
 enum halcyonMode {

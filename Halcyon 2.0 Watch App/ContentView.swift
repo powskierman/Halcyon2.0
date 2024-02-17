@@ -1,15 +1,9 @@
-//
-//  ContentView.swift
-//  SmartHomeThermostat
-//
-//  Created by Ali Mert Özhayta on 1.05.2022.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selectedRoom: Room = .Chambre // Default to the first room
-    @State private var temperaturesForRooms: [Room: Double] = Room.allCases.reduce(into: [:]) { $0[$1] = 22 } // Initialize with default temperature
+    @State private var selectedTemperature: Double = 22
+    @State private var selectedRoom: Room = .Chambre
+    @State private var temperaturesForRooms: [Room: Double] = Room.allCases.reduce(into: [:]) { $0[$1] = 22 }
 
     var body: some View {
         NavigationView {
@@ -19,8 +13,7 @@ struct ContentView: View {
                     VStack(spacing: 0) {
                         TabView(selection: $selectedRoom) {
                             ForEach(Room.allCases, id: \.self) { room in
-                                // Use a binding to the specific room's temperature
-                                ThermostatView(temperature: bindingFor(room: room), room: room)
+                                ThermostatView(temperature: self.bindingFor(room: room), room: room)
                                     .tag(room)
                             }
                         }
@@ -34,17 +27,16 @@ struct ContentView: View {
         }
     }
 
-    // Helper function to get a binding to a room's temperature
     private func bindingFor(room: Room) -> Binding<Double> {
         Binding(
-            get: { temperaturesForRooms[room, default: 22] }, // Provide a default value
-            set: { temperaturesForRooms[room] = $0 }
+            get: { self.temperaturesForRooms[room, default: 22] },
+            set: { self.temperaturesForRooms[room] = $0 }
         )
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(HassClimateService()) // This is where you add the environment object
     }
 }
