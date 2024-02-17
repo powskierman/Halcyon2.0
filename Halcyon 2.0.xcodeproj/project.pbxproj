@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D04C99B22B7C44E000266270 /* ThermostatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C99B12B7C44E000266270 /* ThermostatViewModel.swift */; };
 		D04C99B52B7C454400266270 /* HassFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04C99B42B7C454400266270 /* HassFramework.xcframework */; };
 		D04C99B62B7C454400266270 /* HassFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D04C99B42B7C454400266270 /* HassFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D04C99B92B7C47D800266270 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C99B82B7C47D800266270 /* Enums.swift */; };
@@ -41,7 +40,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D04C99B12B7C44E000266270 /* ThermostatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermostatViewModel.swift; sourceTree = "<group>"; };
 		D04C99B42B7C454400266270 /* HassFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = HassFramework.xcframework; path = ../Frameworks/HassFramework/HassFramework.xcframework; sourceTree = "<group>"; };
 		D04C99B82B7C47D800266270 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		D04C99BE2B7C538100266270 /* WatchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 		D04C99B02B7C44B000266270 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				D04C99B12B7C44E000266270 /* ThermostatViewModel.swift */,
 				D04C99B82B7C47D800266270 /* Enums.swift */,
 				D04C99BE2B7C538100266270 /* WatchManager.swift */,
 				D04C99C42B7EC91900266270 /* HassClientService.swift */,
@@ -255,7 +252,6 @@
 				D04C99C72B800E9600266270 /* HassClimateService.swift in Sources */,
 				D0F29C262B7AC14C00B0F805 /* ThermostatSummaryView.swift in Sources */,
 				D0F29C292B7AC16500B0F805 /* ThermostatPlaceholderView.swift in Sources */,
-				D04C99B22B7C44E000266270 /* ThermostatViewModel.swift in Sources */,
 				D04C99BF2B7C538200266270 /* WatchManager.swift in Sources */,
 				D0F29C082B7ABD1C00B0F805 /* ContentView.swift in Sources */,
 				D0F29C252B7AC14400B0F805 /* ThermostatScaleView.swift in Sources */,
