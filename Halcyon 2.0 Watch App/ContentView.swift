@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selectedTemperature: Double = 22
-    @State private var selectedRoom: Room = .Chambre
+    @State private var selectedRoom: Room = .chambre
     @State private var temperaturesForRooms: [Room: Double] = Room.allCases.reduce(into: [:]) { $0[$1] = 22 }
 
     var body: some View {
@@ -37,6 +37,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environmentObject(HassClimateService()) // This is where you add the environment object
+        ContentView().environmentObject(ClimateViewModel()) // This is where you add the environment object
     }
 }

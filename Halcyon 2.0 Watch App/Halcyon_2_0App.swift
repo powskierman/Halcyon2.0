@@ -12,7 +12,7 @@ struct Halcyon_2_0_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(HassClimateService.shared) // Assuming HassClimateService has a shared instance
+                .environmentObject(ClimateViewModel.shared) // Assuming HassClimateService has a shared instance
         }
     }
 }

@@ -11,15 +11,15 @@
 		D04C99B62B7C454400266270 /* HassFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D04C99B42B7C454400266270 /* HassFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D04C99B92B7C47D800266270 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C99B82B7C47D800266270 /* Enums.swift */; };
 		D04C99BF2B7C538200266270 /* WatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C99BE2B7C538100266270 /* WatchManager.swift */; };
-		D04C99C52B7EC91900266270 /* HassClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C99C42B7EC91900266270 /* HassClientService.swift */; };
-		D04C99C72B800E9600266270 /* HassClimateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C99C62B800E9600266270 /* HassClimateService.swift */; };
+		D04C99C52B7EC91900266270 /* HassAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C99C42B7EC91900266270 /* HassAPIService.swift */; };
+		D04C99C72B800E9600266270 /* ClimateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C99C62B800E9600266270 /* ClimateViewModel.swift */; };
 		D04C99C92B80359F00266270 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = D04C99C82B80359F00266270 /* Secrets.plist */; };
 		D0F29C062B7ABD1C00B0F805 /* Halcyon_2_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C052B7ABD1C00B0F805 /* Halcyon_2_0App.swift */; };
 		D0F29C082B7ABD1C00B0F805 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C072B7ABD1C00B0F805 /* ContentView.swift */; };
 		D0F29C0A2B7ABD1E00B0F805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F29C092B7ABD1E00B0F805 /* Assets.xcassets */; };
 		D0F29C0D2B7ABD1E00B0F805 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F29C0C2B7ABD1E00B0F805 /* Preview Assets.xcassets */; };
 		D0F29C252B7AC14400B0F805 /* ThermostatScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C192B7ABFFE00B0F805 /* ThermostatScaleView.swift */; };
-		D0F29C262B7AC14C00B0F805 /* ThermostatSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C1B2B7ABFFE00B0F805 /* ThermostatSummaryView.swift */; };
+		D0F29C262B7AC14C00B0F805 /* ThermostatModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C1B2B7ABFFE00B0F805 /* ThermostatModeView.swift */; };
 		D0F29C272B7AC15500B0F805 /* ThermostatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C1C2B7ABFFE00B0F805 /* ThermostatView.swift */; };
 		D0F29C282B7AC15D00B0F805 /* ThermometerDialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C1E2B7ABFFE00B0F805 /* ThermometerDialView.swift */; };
 		D0F29C292B7AC16500B0F805 /* ThermostatPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C202B7ABFFE00B0F805 /* ThermostatPlaceholderView.swift */; };
@@ -43,8 +43,8 @@
 		D04C99B42B7C454400266270 /* HassFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = HassFramework.xcframework; path = ../Frameworks/HassFramework/HassFramework.xcframework; sourceTree = "<group>"; };
 		D04C99B82B7C47D800266270 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		D04C99BE2B7C538100266270 /* WatchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
-		D04C99C42B7EC91900266270 /* HassClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HassClientService.swift; sourceTree = "<group>"; };
-		D04C99C62B800E9600266270 /* HassClimateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HassClimateService.swift; sourceTree = "<group>"; };
+		D04C99C42B7EC91900266270 /* HassAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HassAPIService.swift; sourceTree = "<group>"; };
+		D04C99C62B800E9600266270 /* ClimateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateViewModel.swift; sourceTree = "<group>"; };
 		D04C99C82B80359F00266270 /* Secrets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Secrets.plist; path = ../GarageWatchHass/Secrets.plist; sourceTree = "<group>"; };
 		D0F29C002B7ABD1C00B0F805 /* _Halcyon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = _Halcyon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F29C052B7ABD1C00B0F805 /* Halcyon_2_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Halcyon_2_0App.swift; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		D0F29C092B7ABD1E00B0F805 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0F29C0C2B7ABD1E00B0F805 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D0F29C192B7ABFFE00B0F805 /* ThermostatScaleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermostatScaleView.swift; sourceTree = "<group>"; };
-		D0F29C1B2B7ABFFE00B0F805 /* ThermostatSummaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermostatSummaryView.swift; sourceTree = "<group>"; };
+		D0F29C1B2B7ABFFE00B0F805 /* ThermostatModeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermostatModeView.swift; sourceTree = "<group>"; };
 		D0F29C1C2B7ABFFE00B0F805 /* ThermostatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermostatView.swift; sourceTree = "<group>"; };
 		D0F29C1E2B7ABFFE00B0F805 /* ThermometerDialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermometerDialView.swift; sourceTree = "<group>"; };
 		D0F29C202B7ABFFE00B0F805 /* ThermostatPlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermostatPlaceholderView.swift; sourceTree = "<group>"; };
@@ -76,8 +76,8 @@
 			children = (
 				D04C99B82B7C47D800266270 /* Enums.swift */,
 				D04C99BE2B7C538100266270 /* WatchManager.swift */,
-				D04C99C42B7EC91900266270 /* HassClientService.swift */,
-				D04C99C62B800E9600266270 /* HassClimateService.swift */,
+				D04C99C42B7EC91900266270 /* HassAPIService.swift */,
+				D04C99C62B800E9600266270 /* ClimateViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -154,7 +154,7 @@
 		D0F29C1A2B7ABFFE00B0F805 /* Dial Summary */ = {
 			isa = PBXGroup;
 			children = (
-				D0F29C1B2B7ABFFE00B0F805 /* ThermostatSummaryView.swift */,
+				D0F29C1B2B7ABFFE00B0F805 /* ThermostatModeView.swift */,
 			);
 			path = "Dial Summary";
 			sourceTree = "<group>";
@@ -247,10 +247,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D04C99C52B7EC91900266270 /* HassClientService.swift in Sources */,
+				D04C99C52B7EC91900266270 /* HassAPIService.swift in Sources */,
 				D0F29C272B7AC15500B0F805 /* ThermostatView.swift in Sources */,
-				D04C99C72B800E9600266270 /* HassClimateService.swift in Sources */,
-				D0F29C262B7AC14C00B0F805 /* ThermostatSummaryView.swift in Sources */,
+				D04C99C72B800E9600266270 /* ClimateViewModel.swift in Sources */,
+				D0F29C262B7AC14C00B0F805 /* ThermostatModeView.swift in Sources */,
 				D0F29C292B7AC16500B0F805 /* ThermostatPlaceholderView.swift in Sources */,
 				D04C99BF2B7C538200266270 /* WatchManager.swift in Sources */,
 				D0F29C082B7ABD1C00B0F805 /* ContentView.swift in Sources */,

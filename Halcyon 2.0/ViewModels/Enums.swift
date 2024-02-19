@@ -12,23 +12,36 @@ enum entityType {
 }
 
 enum Room: String, CaseIterable {
-    case Chambre = "Chambre"
-    case TVRoom = "TV Room"
-    case Cuisine = "Cuisine"
-    case Salon = "Salon"
-    case Amis = "Amis"
+    case chambre = "Chambre"
+    case tvRoom = "TV Room"
+    case cuisine = "Cuisine"
+    case salon = "Salon"
+    case amis = "Amis"
     
     var entityId: String {
-         "climate.\(self.rawValue)_thermostat"
-     }
+        "climate.halcyon_\(self.rawValue.lowercased())"
+    }
 }
 
-enum halcyonMode {
-    case auto
-    case heat
-    case cool
-    case dry
-    case fanOnly
+enum HvacModes: String, CaseIterable {
+    case off, heat, cool, dry, fan_only
+
+    var next: HvacModes {
+        let allModes = HvacModes.allCases
+        let currentIndex = allModes.firstIndex(of: self) ?? 0
+        let nextIndex = (currentIndex + 1) % allModes.count
+        return allModes[nextIndex]
+    }
+
+    var systemImageName: String {
+        switch self {
+        case .off: return "power"
+        case .heat: return "thermometer.sun"
+        case .cool: return "thermometer.snowflake"
+        case .dry: return "drop.fill"
+        case .fan_only: return "wind"
+        }
+    }
 }
 
 enum fanSpeed {
