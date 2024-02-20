@@ -60,7 +60,7 @@ class HassAPIService: ObservableObject {
         
         // Note: The service to set both the HVAC mode and temperature might differ or require separate calls
         // depending on your Home Assistant setup. Assuming 'climate.set_temperature' can also accept 'hvac_mode':
-        let command = HassRestClient.DeviceCommand(service: "climate.set_temperature", entityId: room.entityId, data: commandData)
+        _ = HassRestClient.DeviceCommand(service: "climate.set_temperature", entityId: room.entityId, data: commandData)
         
         // Use HassAPIService to send the command
         HassAPIService.shared.sendCommand(entityId: room.entityId, hvacMode: mode, temperature: temperature) { result in

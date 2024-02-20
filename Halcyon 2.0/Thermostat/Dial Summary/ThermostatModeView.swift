@@ -1,40 +1,43 @@
 //
-//  ThermometerSummaryView.swift
+//  ThermostatModeView.swift
 //  SmartHomeThermostat
-//
-//  Created by Ali Mert Özhayta on 1.05.2022.
 //
 
 import SwiftUI
 
-struct ThermostatMode: View {
-//    var status: Status
-//    var showStatus: Bool
+struct ThermostatModeView: View {
     var temperature: CGFloat
-    
+    @Binding var mode: HvacModes // Assuming you've updated this view to use a binding for mode as suggested
+
     var body: some View {
-        VStack(spacing: 0) {
-            // MARK: Temperature
-            Text("\(temperature, specifier: "%.0f")")
+        VStack {
+            // Display the temperature
+            Text("\(temperature, specifier: "%.0f")°")
                 .font(.system(size: 54))
                 .foregroundColor(.white)
-            
-            // MARK: Thermometer
-            Image(systemName: "thermometer.medium")
-                .font(.title2.bold())
-                .foregroundColor(.teal)
+
+            // Display the mode with an interactive element that allows changing the mode
+            // Here, we use the mode binding directly instead of accessing it through a viewModel
+            Image(systemName: mode.systemImageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 50, height: 50)
+                .padding()
+                .onTapGesture {
+                    // Cycle to the next HVAC mode
+                    mode = mode.next
+                }
         }
-        .padding(.top, 15)
     }
 }
 
-struct ThermometerSummaryView_Previews: PreviewProvider {
+
+struct ThermostatModeView_Previews: PreviewProvider {
     static var previews: some View {
-        ThermostatMode(
-//            status: .heating,
-//            showStatus: true,
-            temperature: 22
+        ThermostatModeView(
+            temperature: 22,
+            mode: .constant(.cool)
         )
-            .background(Color("Inner Dial 2"))
+        .background(Color("Inner Dial 2"))
     }
 }

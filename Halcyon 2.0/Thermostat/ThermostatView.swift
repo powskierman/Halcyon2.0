@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ThermostatView: View {
     @Binding var temperature: Double
+    @Binding var mode: HvacModes // Add binding for HVAC mode
     var room: Room
     @EnvironmentObject var climateService: ClimateViewModel
     
@@ -13,10 +14,11 @@ struct ThermostatView: View {
     private var ringSize: CGFloat { baseRingSize }
     private var outerDialSize: CGFloat { baseOuterDialSize }
     
-    init(temperature: Binding<Double>, room: Room) {
-        self._temperature = temperature
-        self.room = room
-    }
+    init(temperature: Binding<Double>, mode: Binding<HvacModes>, room: Room) {
+         self._temperature = temperature
+         self._mode = mode // Initialize the mode binding
+         self.room = room
+     }
     
     var body: some View {
         GeometryReader { geometry in
@@ -36,7 +38,7 @@ struct ThermostatView: View {
                     .animation(.linear(duration: 1), value: CGFloat(temperature) / 40)
                 
                 ThermometerDialView(outerDialSize: outerDialSize, degrees: CGFloat(temperature) / 40 * 360)
-                ThermostatMode(temperature: CGFloat(temperature))
+                ThermostatModeView(temperature: CGFloat(temperature), mode: $mode)
             }
             .focusable()
             .digitalCrownRotation(
@@ -55,6 +57,6 @@ struct ThermostatView: View {
     
     private func postTemperatureUpdate(newTemperature: Double) {
         let entityId = room.entityId
-        climateService.updateTemperatureIfNeeded(entityId: entityId, newTemperature: newTemperature)
+        climateService.sendTemperatureUpdate(entityId: entityId, mode: mode, temperature: Int(newTemperature))
     }
 }

@@ -18,7 +18,7 @@ enum Room: String, CaseIterable {
     case salon = "Salon"
     case amis = "Amis"
     
-    var entityId: String {
+    public var entityId: String {
         "climate.halcyon_\(self.rawValue.lowercased())"
     }
 }
