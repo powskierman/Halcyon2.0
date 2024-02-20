@@ -14,6 +14,7 @@
 		D04C99C52B7EC91900266270 /* HassAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C99C42B7EC91900266270 /* HassAPIService.swift */; };
 		D04C99C72B800E9600266270 /* ClimateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04C99C62B800E9600266270 /* ClimateViewModel.swift */; };
 		D04C99C92B80359F00266270 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = D04C99C82B80359F00266270 /* Secrets.plist */; };
+		D092A0CE2B85330100D68AE8 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092A0CD2B85330100D68AE8 /* TestView.swift */; };
 		D0F29C062B7ABD1C00B0F805 /* Halcyon_2_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C052B7ABD1C00B0F805 /* Halcyon_2_0App.swift */; };
 		D0F29C082B7ABD1C00B0F805 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F29C072B7ABD1C00B0F805 /* ContentView.swift */; };
 		D0F29C0A2B7ABD1E00B0F805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F29C092B7ABD1E00B0F805 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		D04C99C42B7EC91900266270 /* HassAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HassAPIService.swift; sourceTree = "<group>"; };
 		D04C99C62B800E9600266270 /* ClimateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateViewModel.swift; sourceTree = "<group>"; };
 		D04C99C82B80359F00266270 /* Secrets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Secrets.plist; path = ../GarageWatchHass/Secrets.plist; sourceTree = "<group>"; };
+		D092A0CD2B85330100D68AE8 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		D0F29C002B7ABD1C00B0F805 /* _Halcyon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = _Halcyon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F29C052B7ABD1C00B0F805 /* Halcyon_2_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Halcyon_2_0App.swift; sourceTree = "<group>"; };
 		D0F29C072B7ABD1C00B0F805 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		D0F29BF32B7ABD1C00B0F805 = {
 			isa = PBXGroup;
 			children = (
+				D092A0CD2B85330100D68AE8 /* TestView.swift */,
 				D04C99C82B80359F00266270 /* Secrets.plist */,
 				D0F29C172B7ABFFE00B0F805 /* Halcyon 2.0 */,
 				D0F29C042B7ABD1C00B0F805 /* Halcyon 2.0 Watch App */,
@@ -247,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D092A0CE2B85330100D68AE8 /* TestView.swift in Sources */,
 				D04C99C52B7EC91900266270 /* HassAPIService.swift in Sources */,
 				D0F29C272B7AC15500B0F805 /* ThermostatView.swift in Sources */,
 				D04C99C72B800E9600266270 /* ClimateViewModel.swift in Sources */,
